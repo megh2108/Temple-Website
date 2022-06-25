@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<script>
+    function getInputDateFormat(date) {
+  return date.toISOString().split('T')[0];
+}
+
+function validDate() {
+  var maxDate = new Date();
+  maxDate.setDate(maxDate.getDate());
+
+  document.getElementsByName("date")[0].setAttribute('max', getInputDateFormat(maxDate));
+}
+</script>
+<body onload="validDate()">
+    <div class="form-group">
+      <p>Date<span>*</span></p>
+      <input type="date" name="date" id="date" class="form-control input-sm " required />
+    </div>
+</body>
+</html>

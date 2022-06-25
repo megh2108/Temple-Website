@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width:5px;
+    height:2px;
+}
+body::-webkit-scrollbar-track{
+    color:white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:rgb(172,172,172);
+    border-radius:20px;
+}
+/* -------------------------navbar-------------------------- */
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index:10;
+}
+
+.navbar
+{
+    background-color:rgb(95, 8, 8);
+    padding: 5px !important;
+}
+.navbar-nav li a{
+    color:white !important;
+    font-weight:600;
+    padding:10px;
+}
+/* .navbar-nav li a:hover{
+    background-color:rgb(20, 20, 102);
+} */
+.fa-bars{
+    color:white;
+    font-size:30px !important;
+}
+.navbar-toggler{
+    outline:none !important;
+}
+
+/* ----------------------------end nav bar-------------------------- */
+
+/* -------------------------------vertical navbar------------------------- */
+
+.vertical-ul{
+    list-style-type:none;
+    width:15%;
+    height:100%;
+    display:block;
+    position:fixed;
+    background-color:rgb(221,218,218);
+    padding:0px;
+    padding-top:4px;
+    margin:0;
+    overflow:hidden;
+}
+.vertical-ul li a{
+    text-decoration:none;
+    color:rgb(117,109,109);
+    font-weight:700;
+    padding:10px 20px;
+    display:block;
+}
+.vertical-ul li a:hover{
+    background-color:rgb(161,161,161);
+    color:white;
+}
+.vertical-ul li a.active{
+    border:0;
+    border-left:7px solid rgb(95, 8, 8);
+    color:rgb(95, 8, 8);
+}
+/* -------------------------------end vertical navbar------------------------- */
+
+/* ---------------------------------set margin------------------------------------ */
+.set-margin{
+    margin-left:15%;
+}
+.title{
+    margin-top:5px;
+}
+h4{
+    color:rgb(95, 8, 8);
+    text-align:center;
+    font-family:'Segoe UI';
+}
+/* --------------------------------end set margin------------------------------------ */
+.search{
+    background-color:rgb(206, 206, 206);
+    padding-left:600px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.search input{
+    outline:none;
+    border:1px solid rgb(206, 206, 206);
+    padding:5px;
+}
+@media(max-width:400px){
+    .search{
+        padding:15px;
+        margin:0;
+    }
+}
+/* ---------------------------------video container------------------------------- */
+
+.list-container{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap:16px;
+    grid-row-gap:30px;
+}
+.vid-list .thumbnail{
+    width:100%;
+    border-radius:5px;
+}
+.vid-list .vid-info a{
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+.vid-info small{
+    color:#5a5a5a;
+    font-size:13px;
+}
+/* ------------------------------------end video container----------------------------- */
+/* -------------------------------------mobile view-------------------------------------- */
+
+@media(max-width:700px){
+    .vertical-ul{
+        width:100%;
+        height:55px;
+        display:flex;
+        position:fixed;
+    }
+    .vertical-ul li a.active{
+        border:0;
+        border-bottom:7px solid rgb(95, 8, 8);
+    }  
+    .set-margin{
+        margin:5px;
+    }
+    .title{
+        margin-top:60px;
+    }
+    .list-container{
+        margin-top:20px;
+        grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    } 
+    .vid-list .vid-info {
+        font-size:12px;
+    }
+}
+@media(max-width:400px){
+    .list-container{
+        margin:0;
+        padding:0;
+        margin-top:5px;
+        grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    } 
+    .vid-list .vid-info {
+        font-size:12px;
+        margin-top:5px;
+    }
+    #myinput{
+        margin:0;
+        margin-top:60px;
+    }
+}
+/* -------------------------------------end mobile view-------------------------------------- */

@@ -1,0 +1,150 @@
+.vertical-ul{
+    list-style-type:none;
+    margin:0;
+    padding:0px;
+    padding-top:4px;
+    width:15%;
+    background-color:rgb(221, 218, 218);
+    position:fixed;
+    height:100%;
+    overflow:hidden;
+}
+.vertical-ul li a{
+    text-decoration:none;
+    display:block;
+    color:rgb(117, 109, 109);
+    padding:10px 20px;
+    font-weight:700;
+}
+.vertical-ul li a.active{
+    border-left: 7px solid rgb(95, 8, 8);
+    color:rgb(95, 8, 8);
+}
+.vertical-ul li a:hover{
+    background-color: rgb(161, 161, 161);
+    color: white;
+}
+.set-margin{
+    margin-left:15%;
+}
+
+/* -------------------information-------------------- */
+
+.shrinathji{
+    margin:15px;
+    margin-right: 400px;
+}
+
+.shrinathji h4{
+    font-weight: 800;
+    font-family:'Segoe UI';
+    color:rgb(95, 8, 8);
+}
+.shrinathji img{
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+.shrinathji p{
+    font-size:19px;
+    padding:0px;
+    line-height: 30px;
+    text-align: justify;
+}
+.shrinathjin ol>li{
+    text-align:justify;
+    font-size:19px;
+    line-height:30px;
+    padding:0px;
+}
+.shrinathji ul li{
+    text-align:justify;
+    padding-top:5px;
+}
+/* ------------------------------end information---------------------- */
+
+/* ---------------------------------mobile view---------------------------- */
+@media(max-width:700px){
+    .set-margin{
+        margin:5px;
+    }
+    .shrinathji{
+        margin:5px 5px;
+        margin-top: 17%;
+    }
+    .vertical-ul{
+        width:100%;
+        height:50px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .vertical-ul li a{
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+    .vertical-ul li a.active{
+        border:0;
+        border-bottom: 5px solid rgb(95, 8, 8);
+    }
+    
+    /* --------------------scrollbar--------------------------------- */
+    .vertical-ul::-webkit-scrollbar {
+        width: 5px;
+        height:2px;               /* width of the entire scrollbar */
+    }
+    .vertical-ul::-webkit-scrollbar-track {
+        background:white;        /* color of the tracking area */
+    }
+    .vertical-ul::-webkit-scrollbar-thumb {
+        background-color: rgb(172, 172, 172);    /* color of the scroll thumb */
+        border-radius: 20px;                       /* roundness of the scroll thumb */
+    }
+    /* ---------------------------endscrollbar---------------------------- */
+    
+    .shrinathji img{
+        margin-left:40px;
+    }
+}
+/* ---------------------------------end mobile view---------------------------- */
+@media(max-width:400px){
+    .set-margin{
+        margin:5px;
+    }
+    .shrinathji{
+        margin:5px 5px;
+        margin-top: 17%;
+    }
+    .vertical-ul{
+        width:100%;
+        height:50px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .vertical-ul li a{
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+    .vertical-ul li a.active{
+        border:0;
+        border-bottom: 5px solid rgb(95, 8, 8);
+    }
+    
+    /* --------------------scrollbar--------------------------------- */
+    .vertical-ul::-webkit-scrollbar {
+        width: 5px;
+        height:2px;               /* width of the entire scrollbar */
+    }
+    .vertical-ul::-webkit-scrollbar-track {
+        background:white;        /* color of the tracking area */
+    }
+    .vertical-ul::-webkit-scrollbar-thumb {
+        background-color: rgb(172, 172, 172);    /* color of the scroll thumb */
+        border-radius: 20px;                       /* roundness of the scroll thumb */
+    }
+    /* ---------------------------endscrollbar---------------------------- */
+    
+    .shrinathji img{
+        margin-left:17px;
+        width:90%;
+        height:68%;
+    }
+}

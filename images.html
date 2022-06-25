@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images</title>
+    </head>
+<body onload="validDate()">
+
+<input id="myBtn" type="date" name="date" oninput="myFunction()"><br>
+<iframe id="myiframe" src="video-all.html" width="800px" height="600px"></iframe>
+<script>
+const element = document.getElementById("myBtn");
+function myFunction() {
+document.getElementById("myiframe").src=element.value+".html";
+//     location.href=element.value+".html";
+}
+function getInputDateFormat(date) {
+    return date.toISOString().split('T')[0];
+}
+
+function validDate() {
+    var maxDate = new Date();
+    maxDate.setDate(maxDate.getDate());
+    document.getElementsByName("date")[0].setAttribute('max', getInputDateFormat(maxDate));
+}
+</script>
+
+</body>
+</html>

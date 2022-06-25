@@ -1,0 +1,84 @@
+.vertical-ul{
+    list-style-type:none;
+    margin:0;
+    padding:0px;
+    padding-top:4px;
+    width:15%;
+    background-color:rgb(221, 218, 218);
+    position:fixed;
+    height:100%;
+    overflow:hidden;
+}
+.vertical-ul li a{
+    text-decoration:none;
+    display:block;
+    color:black;
+    padding:10px 20px;
+    font-weight:bold;
+}
+.vertical-ul li a.active{
+    border-left: 7px solid rgb(95, 8, 8);
+    color:rgb(95, 8, 8);
+}
+.vertical-ul li a:hover{
+    background-color: rgb(161, 161, 161);
+    color: white;
+}
+.set-margin{
+    margin-left:15%;
+}
+
+/* -------------------information-------------------- */
+
+.shrinathji{
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 400px;
+}
+
+.shrinathji h4{
+    font-weight: bold;
+}
+.shrinathji img{
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+.shrinathji p{
+    font-size:19px;
+    padding:0px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+@media(max-width:700px){
+    .set-margin{
+        margin:5px;
+    }
+    .wholecolor{
+        background-color:rgb(221, 218, 218);
+        height:0px;
+    }
+    .shrinathji{
+        margin:5px 5px;
+        margin-top: 17%;
+    }
+    .vertical-ul{
+        height:auto;
+        width:100%;
+        position:relative;
+        position: fixed;
+    }
+    .vertical-ul li a{
+        float:left;
+        padding:15px;
+    }
+    .vertical-ul li a.active{
+        border:0;
+        border-bottom: 7px solid rgb(95, 8, 8);
+        color:rgb(95, 8, 8);
+    }
+    .shrinathji img{
+        margin-left:40px;
+    }
+}
