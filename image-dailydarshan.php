@@ -16,34 +16,7 @@
         <link rel="stylesheet" href="image.css">
         <title>Images</title>
 
-        <style>
-          /* @media(max-width:400px) {
-            
-            .set-margin{
-              width:500px;
-              height:500px;
-
-            }
-            .dateselect{
-              width:500px;
-              height:500px;
-            }
-            
-        } */
-
-        @media(max-width:700px){
-          .vertical-ul{
-              width:100%;
-              height:55px;
-              display:flex;
-              position:fixed;
-          }
-          .vertical-ul li a.active{
-              border:0;
-              border-bottom:7px solid rgb(95, 8, 8);
-          }  
-          
-        </style>
+      
     </head>
     <body onload="validDate()">
         <!----------------------------------------- navbar ------------------------------ -->
